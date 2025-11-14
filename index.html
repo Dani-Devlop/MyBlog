@@ -4,89 +4,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>My Blog</title>
-  <link rel="stylesheet" href="Style.css" type="text/css" media="all" />
+  <title>Web Developer Portfolio</title>
+  <link rel="stylesheet" href="Style.css">
 </head>
 
-
 <body>
-  <!--------------- Header --------------->
+  <!-- Header -->
   <header>
     <nav>
       <ul>
-        <li><a href="#home">Home</a></li>
+        <li><a href="#HomeP">Home</a></li>
         <li><a href="#about">About Me</a></li>
         <li><a href="#contact">Contact Us</a></li>
       </ul>
     </nav>
   </header>
-  <!----------- Main ------------>
-  <!-- Part 1 of 3 -->
-  <div id="HomeP">
-    <div id="home">
-    <main>
-      <div id="Home">
-        <img src="./Components/Picture/Logo.jpg" alt="Logo">
 
-        <div class="Names">
-          <h1>
-            Hello , I'm Dani
-          </h1>
+  <!-- Part 1 of 3 -->
+  <section id="home">
+    <div id="HomeP">
+      <main>
+        <div id="Home">
+          <img src="./Components/Picture/Logo.jpg" alt="Logo">
+          <div class="Names">
+            <h1>Hello , I'm Dani</h1>
+          </div>
         </div>
-      </div>
-    </main>
+      </main>
     </div>
-  </div>
+  </section>
 
   <!-- Part 2 of 3 -->
+   <section id="about">
   <div id="AboutP">
     <div id="about">
       <h1>About Me</h1>
-      <!-- <h2> I'm Dani </h2> -->
-      <h4>Hello, I'm a Dani, Web-developer based on Tehran. i have rich experience in web site design & building and Customization  </h4>
-      <div>
-        <!-- <img src="./Components/Picture/Icons/Phone.png" height="22px" width="auto" > -->
-        <!-- <span> : +98 (910)687-5220</span> -->
-      </div>
-      <div>
+      <h4>Hello, I'm a Dani, Web-developer based on Tehran. i have rich experience in web site design & building and Customization</h4>
+      <!-- <div>
         <img src="./Components/Picture/Icons/Email.svg" height="22px" width="auto">
         <span>: X@gmail.com</span>
-      </div>
-
-      <img src="./Components/Picture/Icons/Maps Flags.png" height="22px" width="auto">
-      <span>: Iran, Tehran</span>
+      
+        <img src="./Components/Picture/Icons/Maps Flags.png" height="22px" width="auto">
+        <span>: Iran, Tehran</span>
+      </div> -->
     </div>
   </div>
 
-  <!-- Part 2 of 3 -->
+
+  <!-- Icons and info -->
+  <div id="icon" >
+  <img src="./Components/Picture/Icons/Email.png" >
+  <img src="./Components/Picture/Icons/Maps Flags.png" >
+  <img src="./Components/Picture/Icons/Phone.png" >
+  </div>
+
+  </section>
+  <!-- Part 3 of 3 -->
+  <section id="contact">
   <div id="ContactP">
-    <div id="contact">
-
-  
-    <form action="" method="post">
-      <h2>Get in touch with us
-</h2>
+      <form action="" method="post">
+        <h2>Get in touch with us</h2>
         <div>
-        <input type="text" required dir="auto" id="names" placeholder="Name"/>
+          <input type="text" required dir="auto" id="names" placeholder="Name">
         </div>
         <div>
-        <input type="email" required dir="auto" id="Emails" placeholder="Email" />
+          <input type="email" required dir="auto" id="Emails" placeholder="Email">
         </div>
         <div>
-        <input type="text" required dir="auto" id="Subject" inputmode="email" placeholder="Subject"/>
+          <input type="text" required dir="auto" id="Subject" inputmode="email" placeholder="Subject">
         </div>
-        <textarea dir="auto" required spellcheck="true" id="req" placeholder="Massage" ></textarea>
+        <textarea dir="auto" required spellcheck="true" id="req" placeholder="Massage"></textarea>
         <div>
-        <!-- Submit -->
-        <button type="submit">SEND MESSAGE</button>
+          <!-- Submit -->
+          <button type="submit">SEND MESSAGE</button>
         </div>
-    </form>
+      </form>
     </div>
-  </div>
-  <!------------ Footer ------------->
+</section>
+
+  <!-- Footer -->
   <footer>
-    <!-- CopyWriting logo ,  -->
+    <!-- CopyWriting logo ,  -->
   </footer>
 </body>
 

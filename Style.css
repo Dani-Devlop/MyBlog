@@ -1,40 +1,56 @@
-/* * {
+/* Color */
+:root {
+  /* --primary-backgroud-color: #0D0D0D; */
+  --link-Botton-Title-color: #0066FF;
+  --Hover-Color: #AA00FF;
+  --text-color: #FFFFFF;
+}
+
+/* Reset */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-} */
-
-html {
-  scroll-behavior: smooth;
+  background-color: var(--primary-backgroud-color);
+  color: var(--text-color);
 }
+
+/* html {
+  scroll-behavior: smooth;
+} */
 
 body {
   font-size: 18px;
-  font-family: sans-serif, Arial, Helvetica,
+  font-family: sans-serif, Arial, Helvetica;
 }
 
-/* ---------  ----------- */
-
-#about,
-#contact {
-  color: blueviolet;
-  text-align: center;
+/* Section */
+.section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#HomeP,
-#ContactP,
-#AboutP {
+#HomeP, #ContactP, #AboutP {
   height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+    color: blueviolet;
+  text-align: center;
 }
 
-/* --------- Nav ----------- */
+/* Navigation */
+nav {
+  top: 0;
+  width: 100%;
+  padding: 15px 0;
+}
 
-ul,
-h2 {
+ul, h2 {
   list-style-type: none;
   justify-content: center;
   display: flex;
@@ -48,15 +64,13 @@ a {
   text-decoration: none;
 }
 
-/* ------- Main --------- */
-
+/* Main */
 main {
   display: flex;
   align-items: center;
   min-height: 300px;
   padding: 40px 20px;
 }
-
 
 main img {
   max-width: 250px;
@@ -65,55 +79,71 @@ main img {
   display: block;
 }
 
+/* Icons and info */
+
+#icon img{
+  /* padding: 20px; */
+  display: flexbox;
+  flex: 1em 1em 1em;
+  height: 20px;
+  width: 20px;
+}
 
 /* Form */
-
 form {
   margin: 0em auto;
   width: 45em;
-  /* padding: 1em; */
-  /* border: 1px solid #cccccc; */
-  /* border-radius: 1.3em; */
+  /* Color not working ! */
+  color: var(--link-Botton-Title-color);
 }
 
-label , div[label] {
+label, div[label] {
   color: rgb(121, 121, 48);
-  /* margin-top: 1em; */
   display: inline-block;
-  /* width: 90px; */
   text-align: center;
-
 }
 
-input , textarea  , button{
+input, textarea, button {
   font: 1em sans-serif;
+  max-width: 25em;
   width: 25em;
   box-sizing: border-box;
   border: 1px solid #999999;
   border-radius: 0.5em;
 }
 
-input , textarea {
-  padding-block: 20px;
+input, textarea {
+  padding: 15px;
+  resize: vertical;
+  margin-bottom: 20px;
+  font-size: 16px;
 }
-textarea{
+
+textarea {
   height: 15em;
+  max-width: 25em;
   width: 25em;
 }
 
-button{ 
+button {
   height: 3em;
+  width: 22em ;
   font-weight: bold;
+  background-color: var(--link-Botton-Title-color);
 }
-textarea , h2 , input  {
-color: aqua;
-padding: 1em;
+
+textarea, h2, input {
+  padding: 1em;
 }
-/* ------- Footer --------- */
+
+h2, a[main] {
+  color: var(--link-Botton-Title-color);
+}
+
+/* Footer */
 
 footer {
   display: block;
-  background-color: #f0f0f0;
   padding: 30px 20px;
   margin-top: 30px;
 }
