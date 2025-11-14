@@ -33,7 +33,7 @@ body {
   justify-content: center;
 }
 
-@media #HomeP,
+@media (max-width: ) #HomeP,
 #ContactP,
 #AboutP {
   height: 100vh;
