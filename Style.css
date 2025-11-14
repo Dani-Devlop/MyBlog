@@ -1,17 +1,67 @@
- , #Part3{
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 18px;
+  font-family: sans-serif, Arial, Helvetica,
+}
+
+/* ---------  ----------- */
+
+#about,
+#contact {
+  color: blueviolet;
+}
+
+#HomeP,
+#ContactP,
+#AboutP {
   height: 100vh;
-  width: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+AaboutP,
+#ContactP {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  text-alignc: center;
 }
 
 /* --------- Nav ----------- */
 
-ul , h2 {
+ul,
+h2 {
   list-style-type: none;
   justify-content: center;
   display: flex;
   margin: 0;
   padding-left: 20px;
-  g;
+  gap: 20px;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ------- Main --------- */
+
+main {
+  display: flex;
+  align-items: center;
   min-height: 300px;
   padding: 40px 20px;
 }
@@ -23,5 +73,19 @@ main img {
   height: auto;
   display: block;
 }
--top: 30px;
+
+.Names {
+  color: blueviolet;
+  margin: 0px;
+  font-size: 24px;
+}
+
+
+/* ------- Footer --------- */
+
+footer {
+  display: block;
+  background-color: #f0f0f0;
+  padding: 30px 20px;
+  margin-top: 30px;
 }
