@@ -21,9 +21,10 @@
       </ul>
     </nav>
   </header>
+  <!----------- Main ------------>
   <!-- Part 1 of 3 -->
   <div id="HomeP">
-    <!----------- Main ------------>
+    <div id="home">
     <main>
       <div id="Home">
         <img src="./Components/Picture/Logo.jpg" alt="Logo">
@@ -35,16 +36,15 @@
         </div>
       </div>
     </main>
+    </div>
   </div>
 
+  <!-- Part 2 of 3 -->
   <div id="AboutP">
-    <!-- about Me  -->
     <div id="about">
-      <h2>About Me</h2>
-      <!-- Dani 
-      Form 
-      Description short  -->
-
+      <h1>About Me</h1>
+      <!-- <h2> I'm Dani </h2> -->
+      <h4>Hello, I'm a Dani, Web-developer based on Tehran. i have rich experience in web site design & building and Customization  </h4>
       <div>
         <!-- <img src="./Components/Picture/Icons/Phone.png" height="22px" width="auto" > -->
         <!-- <span> : +98 (910)687-5220</span> -->
@@ -56,29 +56,32 @@
 
       <img src="./Components/Picture/Icons/Maps Flags.png" height="22px" width="auto">
       <span>: Iran, Tehran</span>
-
     </div>
   </div>
 
+  <!-- Part 2 of 3 -->
   <div id="ContactP">
-    <!-- Contact -->
     <div id="contact">
-      <h2>Contact Us</h2>
 
-
-      <form>
-        <label for="names">Name:</label>
-        <input type="text" required dir="auto" id="names" />
-        <br>
-        <label for="Emails">Email:</label>
-        <input type="email" required dir="ltr" id="Emails" />
-        <br>
-        <label for="Req">What's your request?</label>
-        <input name="" id="Req" spellcheck="true" dir="auto" value="" required />
-        <br>
+  
+    <form action="" method="post">
+      <h2>Get in touch with us
+</h2>
+        <div>
+        <input type="text" required dir="auto" id="names" placeholder="Name"/>
+        </div>
+        <div>
+        <input type="email" required dir="auto" id="Emails" placeholder="Email" />
+        </div>
+        <div>
+        <input type="text" required dir="auto" id="Subject" inputmode="email" placeholder="Subject"/>
+        </div>
+        <textarea dir="auto" required spellcheck="true" id="req" placeholder="Massage" ></textarea>
+        <div>
         <!-- Submit -->
-        <button type="submit">Submit</button>
-      </form>
+        <button type="submit">SEND MESSAGE</button>
+        </div>
+    </form>
     </div>
   </div>
   <!------------ Footer ------------->
