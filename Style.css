@@ -33,13 +33,15 @@ body {
   justify-content: center;
 }
 
-#HomeP, #ContactP, #AboutP {
+@media #HomeP,
+#ContactP,
+#AboutP {
   height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-    color: blueviolet;
+  color: blueviolet;
   text-align: center;
 }
 
@@ -50,7 +52,8 @@ nav {
   padding: 15px 0;
 }
 
-ul, h2 {
+ul,
+h2 {
   list-style-type: none;
   justify-content: center;
   display: flex;
@@ -81,12 +84,13 @@ main img {
 
 /* Icons and info */
 
-#icon img{
+#icon img {
   display: flexbox;
-  flex-direction: row ;
+  flex-direction: row;
+
   color: black;
   background-color: aquamarine;
-  margin-left: 4em ;
+  margin-left: 4em;
   height: 75px;
   width: 75px;
 }
@@ -99,13 +103,16 @@ form {
   color: var(--link-Botton-Title-color);
 }
 
-label, div[label] {
+label,
+div[label] {
   color: rgb(121, 121, 48);
   display: inline-block;
   text-align: center;
 }
 
-input, textarea, button {
+input,
+textarea,
+button {
   font: 1em sans-serif;
   max-width: 25em;
   width: 25em;
@@ -114,7 +121,8 @@ input, textarea, button {
   border-radius: 0.5em;
 }
 
-input, textarea {
+input,
+textarea {
   padding: 15px;
   resize: vertical;
   margin-bottom: 20px;
@@ -129,16 +137,19 @@ textarea {
 
 button {
   height: 3em;
-  width: 22em ;
+  width: 22em;
   font-weight: bold;
   background-color: var(--link-Botton-Title-color);
 }
 
-textarea, h2, input {
+textarea,
+h2,
+input {
   padding: 1em;
 }
 
-h2, a[main] {
+h2,
+a[main] {
   color: var(--link-Botton-Title-color);
 }
 
