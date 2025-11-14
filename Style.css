@@ -1,11 +1,4 @@
-/* ---------  ----------- */
-body{
-  font-size: 18px ;
-}
-#about , #contact{
-  color: blueviolet;
-}
-#Part1 , #Part2 , #Part3{
+ , #Part3{
   height: 100vh;
   width: 100vh;
 }
