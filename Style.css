@@ -1,10 +1,39 @@
-/* Color */
+
 :root {
+  /* Color Var */
   --primary-backgroud-color: #0D0D0D;
   --link-Botton-Title-color: #0066FF;
   --Hover-Color: #AA00FF;
-  --text-color: #FFFFFF;
-  --Button-hover : #
+  --text-color: rgb(255, 255, 255);
+  
+  /* Number Var */
+  --animation-direction: 0.5s ;
+}
+
+
+
+/* Media Query  and Responsive */
+
+/* Phone */
+.Container {
+  width: 100%;
+}
+/* Tablet */
+@media screen and (min-width: 600px) {
+  .Container{
+    width: 50%;
+    max-width: 25em;
+  }
+}
+
+
+/* Desktop */
+@media screen and (min-width: 1200px) {
+  .Container{    
+    width: 45em;
+    max-width: 50em;
+    /* font-size: 40px; */
+  }
 }
 
 /* Reset */
@@ -26,9 +55,12 @@ body {
 }
 
 
-.title , .title[h1] , title[h2]{
-  color: var(--link-Botton-Title-color);
+
+h1, h2{
+    color: var(--link-Botton-Title-color);
 }
+
+
 /* Section */
 .section {
   width: 100%;
@@ -39,15 +71,15 @@ body {
 }
 
 
-#HomeP,
-#ContactP,
-#AboutP {
+#HomeP,#ContactP,#AboutP {
   height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  flex-direction: column;
+  margin: 0 auto;
 }
 
 /* Navigation */
@@ -57,8 +89,7 @@ nav {
   padding: 15px 0;
 }
 
-ul,
-h2 {
+ul,h2 {
   list-style-type: none;
   justify-content: center;
   display: flex;
@@ -103,7 +134,7 @@ main img {
 /* Form */
 form {
   margin: 0em auto;
-  width: 45em;
+  /* width: 45em; */
   /* Color not working ! */
   color: var(--link-Botton-Title-color);
 }
@@ -120,7 +151,7 @@ textarea,
 button {
   font: 1em sans-serif;
   max-width: 25em;
-  width: 25em;
+  min-width: 25em;
   box-sizing: border-box;
   border: 1px solid #999999;
   border-radius: 0.5em;
@@ -147,16 +178,10 @@ button {
   background-color: var(--link-Botton-Title-color);
 }
 
-textarea,
-h2,
-input {
+textarea,h2,input {
   padding: 1em;
 }
 
-h2,
-a[main] {
-  color: var(--link-Botton-Title-color);
-}
 
 /* Footer */
 
@@ -166,9 +191,16 @@ footer {
   margin-top: 30px;
 }
 
-
+/* hover */
 
 button:hover{
  background-color: var(--text-color);
  color: var(--link-Botton-Title-color);
+  transition: var(--animation-direction);
+}
+
+
+nav a:hover{
+  color: var(--link-Botton-Title-color);
+  transition: var(--animation-direction);
 }
