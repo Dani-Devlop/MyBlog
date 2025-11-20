@@ -93,6 +93,11 @@ form {
   box-shadow: 0 0 15px var(--link-Botton-Title-color);
 }
 
+form , input{
+    padding-left: 40%;
+    padding-right: 40%;
+  
+}
 form input,
 form textarea {
   font-family: inherit;
@@ -131,3 +136,46 @@ form button:hover {
   color:var(--link-Botton-Title-color);
   transform: translateY(-2px);
 }
+
+
+@media only screen and (max-width: 600px) and (orientation: landscape) {
+
+    .wrapper-main{
+    width: 100%;
+    background-color: orange;
+
+}
+
+}
+/* Orientation is when turn the phone horizontally : portrait */
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+
+    .wrapper-main{
+    width: 100%;
+    background-color: rgb(33, 46, 218);
+
+}
+}
+
+/* 601 - 768 */
+@media only screen and  (min-width: 601px) and (max-width: 768px) {
+
+    .wrapper-main{
+    width: 100%;
+    background-color: red;
+
+}
+}
+
+/* 992 - 1000 */
+@media only screen and (min-width: 992px) {
+
+    .wrapper-main{
+    width: 100%;
+    background-color: purple;
+
+}
+}
+
+/*  <600px , 601px , 768px , 992px , above 1200px*/
+/* Highest width display is 8k : 7680pixels */
