@@ -6,7 +6,7 @@ MyBlog is a lightweight, single-page personal portfolio designed for a web devel
 
 ---
 
-✨ Features
+### ✨ Features
 
 · Personal Branding — Clean layout with a profile image, name, and tagline.
 · About Section — Introduce yourself and your expertise.
